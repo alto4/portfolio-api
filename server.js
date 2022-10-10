@@ -8,9 +8,10 @@ const app = express();
 
 mongoose.connect(process.env.DATABASE_URL);
 
+app.use(cors());
+
 // Middleware
 app.use(express.json());
-app.use(cors());
 
 // Routes
 const contactRouter = require('./routes/contact');
