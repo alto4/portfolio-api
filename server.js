@@ -10,12 +10,7 @@ mongoose.connect(process.env.DATABASE_URL);
 
 // Middleware
 app.use(express.json());
-app.use(
-  cors({
-    // origin: 'http://localhost:3000',
-    origin: 'https://portfolio-2022-lyart-xi.vercel.app/',
-  })
-);
+app.use(cors());
 
 // Routes
 const contactRouter = require('./routes/contact');
