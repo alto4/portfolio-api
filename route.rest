@@ -1,0 +1,30 @@
+GET http://localhost:8000/contact
+
+###
+
+GET http://localhost:8000/contact/634491287e5727fb45db09cd
+
+### 
+POST http://localhost:8000/contact
+Content-Type: application/json
+
+{
+  "name": "Scott Alton",
+  "email": "scottaltonmusic@gmail.com",
+  "message": "Hi Scott!"
+}
+
+### 
+DELETE http://localhost:8000/contact/634489d0e2d5402520603ade
+Content-Type: application/json
+
+
+### 
+PATCH http://localhost:8000/contact/634491287e5727fb45db09cd
+Content-Type: application/json
+
+{
+  "name": "Scott Alcock",
+  "email": "satech@gmail.com",
+  "message": "Hi Scott!"
+}
