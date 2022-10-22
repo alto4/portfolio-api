@@ -26,4 +26,4 @@ const contactRouter = require('./routes/contact');
 app.get('/', (req, res) => res.send('App running...'));
 app.use('/contact', contactRouter);
 
-app.listen(8000, () => console.log('Server running on port 8000.'));
+app.listen(process.env.PORT, () => console.log('Server running on port 8000.'));
